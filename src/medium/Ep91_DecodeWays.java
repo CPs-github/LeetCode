@@ -21,7 +21,7 @@ public class Ep91_DecodeWays {
                 continue;
             }
             int num = 0 ;
-            for (int j = i ; j - i < 2 ; j++ ){
+            for (int j = i ; j < length &&j - i < 2 ; j++ ){
                 // 如果两个数字可以组成解码成一个字母时
                 num = num * 10 + (charArray[j] - '0');
                 if(num < 27){
